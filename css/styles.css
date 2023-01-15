@@ -325,7 +325,8 @@ ul{
     margin-bottom: 100px;
 }
 
-.achievmentDetails h2 {
+.achievmentDetails h2,
+.siteContactArea h2 {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
@@ -371,7 +372,8 @@ ul{
 /*-----------------------------------------
             CSS FOR SPONSORS AREA
 --------------------------------------------*/
-.sponsorDetails {
+.sponsorDetails,
+.contactDesc {
     width: 540px;
     margin: 0 auto;
     text-align: center;
@@ -386,6 +388,83 @@ ul{
 .sponsorBox {
     text-align: center;
 }
+
+.sponsorDetails h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px; 
+    margin-bottom: 24px;   
+}
+
+.sponsorDetails p {
+    line-height: 26px;
+}
+
+/*-----------------------------------------
+            CSS FOR Contact Area
+--------------------------------------------*/
+.siteContactArea h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contactContainer {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.quickContact, .contactForm, .contactLocation {
+    width: 300px;
+}
+.quickContact h4, .contactForm h4, .contactLocation h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contactInfo {
+    margin-top: 10px;
+}
+
+.contactInfo p, .quickContact {
+    line-height: 23px;
+    margin: 0;
+}
+
+.contactInfo ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+}
+
+.map iframe {
+    border-radius: 8px;
+    width: 300px; 
+    height: 210px;
+}
+
+.contactForm input, .contactForm textarea {
+    width: 100%;
+    background:  rgba(255, 144, 14, 0.1);
+    border: 1px solid #FF900E;
+    border-radius: 3px;
+    padding: 10px 10px;
+    margin-bottom: 12px;
+}
+
+.contactForm textarea{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+}
+
+.contactForm input[type="submit"] {
+    color: #fff;
+    background-color:  #FF900E;
+    width: 100px;
+}
+
 
 /*-----------------------------------------
             CSS FOR FOOTER
@@ -426,7 +505,9 @@ ul{
     .siteNav ul,
     .achievmentSection,
     .sponsorSection,
-    .siteFeaturedArea {
+    .siteFeaturedArea,
+    .contactContainer,
+    .contactInfo ul {
         flex-direction: column;
     }
 
@@ -438,7 +519,8 @@ ul{
     .achievmentBox,
     .achievmentDetails,
     .sponsorDetails,
-    .featuredImage {
+    .featuredImage,
+    .contactDesc {
         width: 75%;
     }
 
@@ -506,7 +588,18 @@ ul{
 
      .right .experianceCount{
         padding: 15px 20px;
-     }     
+     }  
+     
+     .quickContact, .contactForm, .contactLocation{
+        width: 90%;
+        padding: 0 20px;
+     }
+
+     .map iframe {width: 95%;}
+
+     .contactForm input, .contactForm textarea {
+        width: 95%;
+     }
 
     
 
