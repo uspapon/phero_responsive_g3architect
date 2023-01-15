@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lobster&family=Poppins:ital,wght@0,200;0,300;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+
+/*------------------------------------------------------
+Template Name: G3Architects
+Color: #FF900E, #FFFFFF, #131313
+Description: This is a theme for G3Architects.
+Version: 0.1
+Author: Papon
+---------------------------------------------------------*/
+
+
+/*-----------------------------------------
+            CSS FOR ELEMENTS
+--------------------------------------------*/
+.html { padding: 0;}
+html, body, ul, h2, h3, h4 {
+    margin: 0;
+
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: #131313;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*-----------------------------------------
+            Common CSS
+--------------------------------------------*/
+.siteInnerWrapper{
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
+.siteHeaderArea, .siteBannerArea {
+    background:  rgba(255, 144, 14, 0.1);
+    padding: 40px 0px;
+}
+
+
+/*-----------------------------------------
+            CSS FOR HEADER
+--------------------------------------------*/
+.siteHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.siteHeader .siteBranding a {
+    color: #131313;
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+/*-----------------------------------------
+            CSS FOR NAVIGATION
+--------------------------------------------*/
+.siteNav ul {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteNav li a { 
+    color: #131313;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    
+}
+
+/*-----------------------------------------
+            CSS FOR BANNER
+--------------------------------------------*/
+.siteBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bannerDesc {
+    width: 862px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.bannerDesc h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.bannerDesc input {
+    border: none;
+    background-color: #FF900E;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+}
+
+.bannerGraphics{
+    
+}
+.bannerGraphics img {
+    width: 100%;
+
+}
+
+
+
+
+
+/*-----------------------------------------
+            CSS FOR BRANDING
+--------------------------------------------*/
+
+
+
+
+
+/*-----------------------------------------
+            CSS FOR SHOP
+--------------------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------------
+            CSS FOR Some Facts
+--------------------------------------------*/
+.siteAchievmentArea {
+    margin-bottom: 100px;
+}
+.achievmentDetails {
+    width: 540px;
+    margin-bottom: 100px;
+}
+
+.achievmentDetails h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.achievmentSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.achievmentBox {
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    height: 240px;
+    width: 240px;
+    transition: background-color 2s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.achievmentBox:hover {
+    background-color: #FF900E;
+    color: #fff;
+
+
+}
+
+/*-----------------------------------------
+            CSS FOR SPONSORS AREA
+--------------------------------------------*/
+.sponsorDetails {
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sponsorSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.sponsorBox {
+    text-align: center;
+}
+
+/*-----------------------------------------
+            CSS FOR FOOTER
+--------------------------------------------*/
+.siteFooter {
+    background:  rgba(255, 144, 14, 0.1);
+}
+
+.siteFooter p {
+    font-size: 20px;
+    text-align: center;
+    padding:  38px 25px;
+}
+
+.displayNone {display: none;}
+
+
+
+/*-----------------------------------------
+            CSS for media
+--------------------------------------------*/
+
+@media screen and (max-width: 576px) {
+    .siteHeader .siteBranding a  {
+        font-size: 36px;
+    }
+
+    .bannerDesc h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+    .siteInnerWrapper {
+        width: 100%;
+    }
+    .siteHeader,
+    .siteNav,
+    .siteNav ul,
+    .achievmentSection,
+    .sponsorSection {
+        flex-direction: column;
+    }
+
+    .siteBanner {
+        flex-direction: column-reverse;
+    }
+
+    .bannerDesc,
+    .achievmentBox,
+    .achievmentDetails,
+    .sponsorDetails {
+        width: 75%;
+    }
+
+    /*.bannerGraphics img,
+    .sponsorSection {
+        width: 70%;
+    } */
+
+    .siteNav {
+        margin-top: 30px;
+    } 
+    .achievmentDetails,
+    .sponsorDetails
+     {
+        padding: 50px 5px 0 20px;
+    }
+    .achievmentSection,
+    .sponsorSection {
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .sponsorSection {
+        gap: 35px
+    }
+
+}
